@@ -1,0 +1,147 @@
+{
+  "provinces": [
+    {
+      "name": "Province 1",
+      "districts": [
+        {
+          "name": "Dhankuta",
+          "municipalities": ["Dhankuta Municipality", "Mahalaxmi", "Pakhribas"]
+        },
+        {
+          "name": "Ilam",
+          "municipalities": ["Ilam Municipality", "Deumai", "Mai"]
+        },
+        {
+          "name": "Jhapa",
+          "municipalities": ["Bhadrapur", "Mechinagar", "Kankai"]
+        }
+      ]
+    },
+    {
+      "name": "Madhesh Province",
+      "districts": [
+        {
+          "name": "Dhanusha",
+          "municipalities": ["Janakpur", "Mithila", "Ganeshman"]
+        },
+        {
+          "name": "Parsa",
+          "municipalities": ["Birgunj", "Pokhariya", "Parsagadhi"]
+        },
+        {
+          "name": "Sarlahi",
+          "municipalities": ["Malangawa", "Hariwan", "Ishworpur"]
+        }
+      ]
+    },
+    {
+      "name": "Bagmati Province",
+      "districts": [
+        {
+          "name": "Kathmandu",
+          "municipalities": ["Kathmandu Metropolitan", "Kirtipur", "Tokha"]
+        },
+        {
+          "name": "Lalitpur",
+          "municipalities": ["Lalitpur Metropolitan", "Mahalaxmi", "Godawari"]
+        },
+        {
+          "name": "Bhaktapur",
+          "municipalities": [
+            "Bhaktapur Municipality",
+            "Madhyapur Thimi",
+            "Suryabinayak"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gandaki Province",
+      "districts": [
+        {
+          "name": "Kaski",
+          "municipalities": ["Pokhara Metropolitan", "Lekhnath", "Madi"]
+        },
+        {
+          "name": "Gorkha",
+          "municipalities": ["Gorkha Municipality", "Palungtar", "Siranchok"]
+        },
+        {
+          "name": "Nawalpur",
+          "municipalities": ["Gaindakot", "Kawasoti", "Devchuli"]
+        }
+      ]
+    },
+    {
+      "name": "Lumbini Province",
+      "districts": [
+        {
+          "name": "Rupandehi",
+          "municipalities": [
+            "Butwal Sub-Metropolitan",
+            "Siddharthanagar",
+            "Tilottama"
+          ]
+        },
+        {
+          "name": "Kapilvastu",
+          "municipalities": [
+            "Kapilvastu Municipality",
+            "Buddhabhumi",
+            "Shivraj"
+          ]
+        },
+        {
+          "name": "Banke",
+          "municipalities": [
+            "Nepalgunj Sub-Metropolitan",
+            "Kohalpur",
+            "Baijanath"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Karnali Province",
+      "districts": [
+        {
+          "name": "Surkhet",
+          "municipalities": ["Birendranagar", "Gurbhakot", "Panchapuri"]
+        },
+        {
+          "name": "Dailekh",
+          "municipalities": [
+            "Narayan Municipality",
+            "Dullu",
+            "Chamunda Bindrasaini"
+          ]
+        },
+        {
+          "name": "Jumla",
+          "municipalities": ["Chandannath", "Tila", "Sinja"]
+        }
+      ]
+    },
+    {
+      "name": "Sudurpashchim Province",
+      "districts": [
+        {
+          "name": "Kailali",
+          "municipalities": [
+            "Dhangadhi Sub-Metropolitan",
+            "Tikapur",
+            "Lamkichuha"
+          ]
+        },
+        {
+          "name": "Kanchanpur",
+          "municipalities": ["Bhimdatta", "Bedkot", "Punarwas"]
+        },
+        {
+          "name": "Doti",
+          "municipalities": ["Dipayal Silgadhi", "Shikhar", "Jorayal"]
+        }
+      ]
+    }
+  ]
+}

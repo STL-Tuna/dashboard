@@ -1,0 +1,88 @@
+{
+  "items": [
+    {
+      "id": 2,
+      "name": "Categories & Tags",
+      "path": "/categories-tags",
+      "icon": "Hash"
+    },
+    {
+      "id": 3,
+      "name": "Blogs",
+      "path": "/blogs",
+      "icon": "Journal"
+    },
+    {
+      "id": 4,
+      "name": "Reports",
+      "path": "/reports",
+      "icon": "FileBarGraph"
+    },
+    {
+      "id": 5,
+      "name": "Users",
+      "path": "/users",
+      "icon": "People"
+    },
+    {
+      "id": 6,
+      "name": "Products",
+      "path": "/products",
+      "icon": "Basket"
+    },
+    {
+      "id": 7,
+      "name": "Gallery",
+      "path": "/gallery",
+      "icon": "CardImage"
+    },
+    {
+      "id": 8,
+      "name": "Locations",
+      "path": "/locations",
+      "icon": "GeoAlt"
+    },
+    {
+      "id": 9,
+      "name": "Contacts",
+      "path": "/contacts",
+      "icon": "Envelope"
+    },
+    {
+      "id": 10,
+      "name": "Designers",
+      "path": "/designers",
+      "icon": "Camera2"
+    },
+    {
+      "id": 11,
+      "name": "Catalogue",
+      "path": "/products/catalogue",
+      "icon": "FileEarmarkPdf"
+    },
+    {
+      "id": 12,
+      "name": "Popup",
+      "path": "/popup/",
+      "icon": "Megaphone"
+    },
+    {
+      "id": 13,
+      "name": "Subscribers",
+      "path": "/subscriber/",
+      "icon": "EnvelopeCheck"
+    },
+    {
+      "id": 14,
+      "name": "Brands",
+      "path": "/brands/",
+      "icon": "Building"
+    },
+    {
+      "id": 15,
+      "name": "Colors",
+      "path": "/colors/",
+      "icon": "Palette"
+    }
+  ]
+}
