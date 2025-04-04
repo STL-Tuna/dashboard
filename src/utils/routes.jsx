@@ -1,8 +1,8 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
-import ProtectedRoute from "../ProtectedRoute";
+import ProtectedRoute from "../auth/ProtectedRoute";
 
-// Dashboad Pages
+// Dashboard Pages
 import { AdminPanel } from "../dashboard/AdminPanel";
 import { AdminHome } from "../dashboard/screens/Home/AdminHome";
 import { AdminCategory } from "../dashboard/screens/Category/AdminCategory";
@@ -28,12 +28,26 @@ import { AdminBrand } from "../dashboard/screens/Brands/AdminBrand";
 import { AdminAddBrand } from "../dashboard/screens/Brands/AdminAddBrand";
 import { AdminColor } from "../dashboard/screens/Colors/AdminColors";
 import { AdminEditLocation } from "../dashboard/screens/Locations/AdminEditLocation";
+import LoginForm from "../loginForm/LoginForm";
+import { useAuth } from "../auth/AuthContext";
+
+// The Login Form (import your login form component)
 
 const Routers = () => {
+  // Check if the auth_token exists in localStorage
+  const { user } = useAuth();
+
   return (
     <Routes>
+      {/* Conditional Route to check if user is logged in */}
+      <Route path="/" element={user ? <AdminPanel /> : <Navigate to="/login" />} />
+
+      {/* Login route if token doesn't exist */}
+      <Route path="/login" element={<LoginForm />} />
+
+      {/* Protected routes for admin dashboard */}
       <Route element={<ProtectedRoute />}>
-        <Route path="/" element={<AdminPanel />} />
+        <Route path="/admin" element={<AdminPanel />} />
         <Route index element={<AdminHome />} />
         <Route path="categories-tags" element={<AdminCategory />} />
         <Route path="blogs">
@@ -42,7 +56,6 @@ const Routers = () => {
         </Route>
         <Route path="reports" element={<AdminReport />} />
         <Route path="colors" element={<AdminColor />} />
-        <Route path="users" element={<AdminUser />} />
         <Route path="users" element={<AdminUser />} />
         <Route path="products">
           <Route index element={<AdminProduct />} />

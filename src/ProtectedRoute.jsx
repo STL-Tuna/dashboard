@@ -1,4 +1,6 @@
+import { useAuth } from "./auth/AuthContext";
 import { AdminPanel } from "./dashboard/AdminPanel";
+import LoginForm from "./loginForm/LoginForm";
 
 // Function to get a cookie by its name
 const getCookie = (name) => {
@@ -6,6 +8,8 @@ const getCookie = (name) => {
   if (match) return match[2];
   return null;
 };
+console.log('from dashboard', getCookie('auth_token'));
+
 
 const isCookieExpired = (cookieName) => {
   const cookie = document.cookie
@@ -52,18 +56,36 @@ const clearCookie = (name, options = {}) => {
   }
 };
 
-const ProtectedRoute = () => {
-  const authToken = getCookie("auth_token");
+// const ProtectedRoute = () => {
+//   const authToken = getLocalStorge("auth_token");
 
-  if (!authToken || isCookieExpired("auth_token")) {
-    clearCookie("auth_token", {
-      domain: ".stlnpl.com",
-    });
-    window.location.href = "https://stlnpl.com";
-    return null;
+//   if (!authToken || isCookieExpired("auth_token")) {
+//     clearCookie("auth_token", {
+//       domain: ".stlnpl.com",
+//     });
+//     // window.location.href = "https://stlnpl.com";
+//     console.log('token not found');
+
+//     return null;
+//   }
+
+//   return <AdminPanel />;
+// };
+
+// export default ProtectedRoute;
+
+const ProtectedRoute = ({ children }) => {
+  // const { user } = useAuth(); // This checks the user from cookies or context
+  const user = true
+
+  // If there's no user (meaning no token), redirect to login
+  if (!user) {
+    return <Navigate to="/login" replace />;
   }
+  console.log('from protected', user);
 
-  return <AdminPanel />;
+  // Otherwise, render the protected route
+  return children;
 };
 
 export default ProtectedRoute;
